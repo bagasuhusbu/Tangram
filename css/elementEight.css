@@ -1,0 +1,148 @@
+/*** MAIN ***/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100vw;
+  height: 100vh;
+}
+
+.flexContainer {
+  width: 1300px;
+  height: 100vh;
+  display: flex;
+  flex-wrap: nowrap;
+  position:relative;
+}
+
+/*** LEFT ***/
+.selectable {
+  background: black;
+  display: inline-flex;
+  position: absolute;
+  z-index: 1;
+}
+
+#square {
+  top: 344px;
+  left: 80px;
+  height: 96px;
+  width: 96px;
+}
+
+#parallelogram {
+  top: 413px;
+  left: 221px;
+  height: 190px;
+  width: 125px;
+  clip-path: polygon(0% 100%, 29% 27%, 100% 0%, 69% 73%);
+}
+
+#triangleSmall1 {
+  top: 293px;
+  left: 503px;
+  height: 67.68px;
+  width: 135.36px;
+  clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+}
+
+#triangleSmall2 {
+  top: 145px;
+  left: 391px;
+  height: 67.68px;
+  width: 135.36px;
+  clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+}
+
+#triangleMiddle {
+  top: 270px;
+  left: 313px;
+  height: 96px;
+  width: 192px;
+  clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+}
+
+#triangleBig1 {
+  top: 447px;
+  left: 415px;
+  height: 135.36px;
+  width: 270.72px;
+  clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+}
+
+#triangleBig2 {
+  top: 101px;
+  left: 105px;
+  height: 135.36px;
+  width: 270.72px;
+  clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+}
+
+
+/*** RIGHT ***/
+.destination {
+  background: Gainsboro;
+  display: inline-flex;
+  position: absolute;
+}
+
+#squareRight{
+  top: 75px;
+  left: 892px;
+  height: 136px;
+  width: 70px;
+  transform: skewY(-44.5deg) skewX(26.5deg);
+}
+
+#parallelogramRight {
+  top: 105px;
+  left: 817px;
+  height: 207px;
+  width: 209px;
+  clip-path: polygon(0% 103%, 52% 51.5%, 100% 51%, 49% 102%);
+}
+
+#triangleSmall1Right {
+  top: 216px;
+  left: 733px;
+  height: 96px;
+  width: 94.36px;
+  transform: skewX(-26.5deg);
+  clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+}
+
+#triangleSmall2Right {
+  top: 311px;
+  left: 789px;
+  height: 67.68px;
+  width: 135.36px;
+  clip-path: polygon(100% 0, 0 0, 50% 100%);
+}
+
+#triangleMiddleRight {
+  top: 477px;
+  left: 921px;
+  height: 138px;
+  width: 138px;
+  transform: skewX(-26.5deg);
+  clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+}
+
+#triangleBig1Right {
+  top: 310px;
+  left: 853.5px;
+  height: 270.36px;
+  width: 137.72px;
+  transform: skewY(-45deg) skewX(13.7deg);
+  clip-path: polygon(0% 100%, 100% 100%, 50% 0%);
+}
+
+#triangleBig2Right {
+  top: 211px;
+  left: 888.5px;
+  height: 270px;
+  width: 136px;
+  clip-path: polygon(0% 49.5%, 100% 100%, 100% 0%);
+}
